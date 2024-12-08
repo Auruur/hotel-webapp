@@ -1,4 +1,4 @@
-Overview
+#Overview
 
 Welcome to the Hotel Utopia project repository! This project is a web application designed for managing hotel reservations, user accounts, and room details. It allows administrators, receptionists, and clients to interact with the system to manage bookings, view room information, and much more.
 
@@ -6,11 +6,12 @@ Credentials to Access the Application
 
 The application includes two pre-registered admin users that you can use to access the platform:
 
-Email: abuela@void.ugr.es
-Password: abuela
-Email: tia@void.ugr.es
-Password: tia
-Database Restoration Files
+- Email: abuela@void.ugr.es
+- Password: abuela
+- Email: tia@void.ugr.es
+- Password: tia
+
+#Database Restoration Files
 
 The following files are included in the backups/ folder to assist with database setup:
 
