@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Homepage Hotel Utopia</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <div class="pagina">
+            <header>
+                <div class="logo-div">
+                    <section>
+                        <h2>Hotel Utopia</h2>
+                        <p>Montaña Sertoyova Chuka</p>
+                    </section>
+        
+                    <aside>
+                        <img id="hotel_logo" src="img_src/utopialogo.png" alt="Logo de Utopia">
+                    </aside>
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="usuarios.html">Usuarios</a></li>
+                </ul>
+            </nav>
+            <div class="main">
+                <div class="login sidebar">
+                    <form action="" method="get">
+                        <input type="email" placeholder="email" required novalidate>
+                        <input type="password" placeholder="password" required novalidate>
+                        <input type="submit" value="login">
+                    </form>
+                    <a href="registracion.html">¿No tiene una cuenta? ¡Regístrate ahora!</a>
+                </div>
+                <main>
+                    <div class="form-container">
+                        <h2>Añadir nueva habitación</h2>
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="numero">Número de habitación:</label>
+                                <input type="text" id="numero" name="numero" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="capacidad">Capacidad:</label>
+                                <input type="number" id="capacidad" name="capacidad" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="precio">Precio por noche:</label>
+                                <input type="number" id="precio" name="precio" required step="0.01">
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion">Descripción:</label>
+                                <textarea id="descripcion" name="descripcion" rows="1" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="fotografia">Fotografía:</label>
+                                <input type="file" id="fotografia" name="fotografia" accept="image/*" required>
+                            </div>
+                            <div class="form-group form-submit">
+                                <input type="submit" value="Añadir Habitación">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="habitaciones-lista">
+                        <h2>Listado de habitaciones</h2>
+                        <div class="habitacion">
+                            <img src="img_src/familiar.png" alt="Suite nupcial">
+                            <div class="habitacion-info">
+                                <h3>Suite nupcial</h3>
+                                <p>Capacidad: 2 personas</p>
+                                <p>Precio por noche: 150€</p>
+                                <p>Descripción: Una suite lujosa perfecta para parejas.</p>
+                            </div>
+                        </div>
+                        <div class="habitacion">
+                            <img src="img_src/double.png" alt="Habitación estándar">
+                            <div class="habitacion-info">
+                                <h3>Habitación estándar</h3>
+                                <p>Capacidad: 3 personas</p>
+                                <p>Precio por noche: 90€</p>
+                                <p>Descripción: Habitación cómoda con todas las comodidades básicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <div class="description sidebar">
+                    <ul>
+                        <li>N° total de habitaciones del hotel:</li>
+                        <li>N° de habitaciones libres:</li>
+                        <li>Capacidad total del hotel:</li>
+                        <li>N° de huéspedes alojados en el hotel:</li>
+                    </ul> 
+                </div>
+            </div>
+            <footer>
+                <section>
+                    <ul>
+                        <li><h2>Hotel Utopia</h2></li>
+                        <li>Giovanni Murgia</li>
+                        <li><a href="">Documentación de la práctica</a></li>
+                        <li><a href="">Restauración de la BBDD</a></li>
+                    </ul>
+                </section>
+            </footer>
+        </div>
+    </body>
+
+</html>

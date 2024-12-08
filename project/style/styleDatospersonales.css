@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(240, 228, 211) url('../img_src/background2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin-bottom: 0.2em;
+}
+
+header {
+    background: rgb(194, 181, 163);
+    padding: 1em 0;
+}
+
+header .logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+header section {
+    text-align: left;
+    color: #333;
+}
+
+header section p {
+    font-style: italic;
+    margin-top: 0.2em;
+}
+
+header aside img {
+    width: 100px;
+    height: auto;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    padding: 2em;
+    gap: 1em;
+}
+
+nav {
+    background: rgb(219, 204, 182);
+    padding: 0;
+    flex: 1 1 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+}
+
+nav ul li:hover {
+    background-color: rgb(194, 181, 163);
+    transition: background-color 0.3s ease;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #333;;
+    display: block;
+    padding: 0.5em 1em;
+    font-size: 18px;
+}
+
+main {
+    background: rgb(219, 204, 182);
+    padding: 2em;
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.profile-box {
+    background: rgb(240, 228, 211);
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.profile-img-container .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.form-row {
+    display: flex;
+    gap: 1em;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:disabled {
+    background-color: #e9e9e9;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+.form-submit input[type="submit"] {
+    background-color: rgb(194, 181, 163);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0.5em 2em;
+    font-size: 16px;
+}
+
+.form-submit input[type="submit"]:hover {
+    background-color: rgb(173, 161, 143);
+}
+
+.error-box {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.error {
+    margin-top: 0.2em; 
+    margin-bottom: 1em; 
+    color: red;
+    font-size: 10px;
+    text-align: left;
+}
+
+.success-box {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.success {
+    margin-top: 0.2em; 
+    margin-bottom: 1em; 
+    color: green;
+    font-size: 10px;
+    text-align: left;
+}
+
+
+.sidebar {
+    background: rgb(219, 204, 182);
+    padding: 2em;
+    flex: 1;
+    max-width: 200px;
+    min-width: 200px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.propic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(240, 228, 211);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 1em;
+    width: auto;
+    margin-bottom: 2px;
+}
+
+.propic:hover {
+    background-color: rgb(194, 181, 163); 
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login p {
+    color: #333;
+    font-size: 16px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.login input[type="email"],
+.login input[type="password"],
+.login input[type="submit"] {
+    margin: 5px 0;
+    padding: 0.5em;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login input[type="submit"] {
+    background-color: rgb(194, 181, 163);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login input[type="submit"]:hover {
+    background-color: rgb(173, 161, 143);
+}
+
+.login a {
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+    margin-top: 1em;
+    transition: color 0.3s ease;
+}
+
+.login a:hover {
+    color: rgb(173, 161, 143);
+}
+
+.description {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+}
+
+.description ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.description li {
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(173, 161, 143);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(194, 181, 163);
+    padding: 1em 0;
+    font-size: 14px;
+    color: #333;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5em;
+}
+
+footer ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: rgb(173, 161, 143);
+}
+
+@media all and (max-width: 550px) {
+    .main {
+        flex-direction: column;
+    }
+    .sidebar {
+        max-width: none;
+        width: 100%;
+        padding: 2em; 
+        border-radius: 8px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+    main {
+        padding: 5em 0;
+    }
+}

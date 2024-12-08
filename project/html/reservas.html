@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Homepage Hotel Utopia</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/styleReservas.css">
+    </head>
+
+    <body>
+        <div class="pagina">
+            <header>
+                <div class="logo-div">
+                    <section>
+                        <h2>Hotel Utopia</h2>
+                        <p>Montaña Sertoyova Chuka</p>
+                    </section>
+        
+                    <aside>
+                        <img id="hotel_logo" src="img_src/utopialogo.png" alt="Logo de Utopia">
+                    </aside>
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="habitaciones.html">Habitaciones</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="usuarios.html">Usuarios</a></li>
+                </ul>
+            </nav>
+            <div class="main">
+                <div class="login sidebar">
+                    <form action="" method="get">
+                        <input type="email" placeholder="email" required novalidate>
+                        <input type="password" placeholder="password" required novalidate>
+                        <input type="submit" value="login">
+                    </form>
+                    <a href="registracion.html">¿No tiene una cuenta? ¡Regístrate ahora!</a>
+                </div>
+                <main>
+                    <div class="form-container">
+                        <h2>Reserva una habitación</h2>
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="personas">Número de personas:</label>
+                                <input type="number" id="personas" name="personas" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dia_entrada">Día de entrada:</label>
+                                <input type="date" id="dia_entrada" name="dia_entrada" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dia_salida">Día de salida:</label>
+                                <input type="date" id="dia_salida" name="dia_salida" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comentarios">Comentarios:</label>
+                                <textarea id="comentarios" name="comentarios" rows="1" required></textarea>
+                            </div>
+                            <div class="form-group form-submit">
+                                <input type="submit" value="Reservar">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="habitaciones-lista">
+                        <h2>Listado de reservas</h2>
+                        <div class="habitacion">
+                            <div class="habitacion-info">
+                                <h3>Giovanni Murgia</h3>
+                                <p>Habitación reservada: Suite nupcial</p>
+                                <p>Día de entrada: 17/06/2024</p>
+                                <p>Día de salida: 21/06/2024</p>
+                                <p>Comentarios: Tengo un perro.</p>
+                            </div>
+                        </div>
+                        <div class="habitacion">
+                            <div class="habitacion-info">
+                                <h3>Marco Manca</h3>
+                                <p>Habitación reservada: Habitación estándar</p>
+                                <p>Día de entrada: 05/07/2024</p>
+                                <p>Día de salida: 10/07/2024</p>
+                                <p>Comentarios: Necesito fumar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <div class="description sidebar">
+                    <ul>
+                        <li>N° total de habitaciones del hotel:</li>
+                        <li>N° de habitaciones libres:</li>
+                        <li>Capacidad total del hotel:</li>
+                        <li>N° de huéspedes alojados en el hotel:</li>
+                    </ul> 
+                </div>
+            </div>
+            <footer>
+                <section>
+                    <ul>
+                        <li><h2>Hotel Utopia</h2></li>
+                        <li>Giovanni Murgia</li>
+                        <li><a href="">Documentación de la práctica</a></li>
+                        <li><a href="">Restauración de la BBDD</a></li>
+                    </ul>
+                </section>
+            </footer>
+        </div>
+    </body>
+
+</html>
