@@ -1,23 +1,24 @@
-#Overview
+## Hotel Utopia Fullstack Web Application
+
+# Overview
 
 Welcome to the Hotel Utopia project repository! This project is a web application designed for managing hotel reservations, user accounts, and room details. It allows administrators, receptionists, and clients to interact with the system to manage bookings, view room information, and much more.
 
-Credentials to Access the Application
+# Credentials to Access the Application
 
 The application includes two pre-registered admin users that you can use to access the platform:
 
-- Email: abuela@void.ugr.es
-- Password: abuela
-- Email: tia@void.ugr.es
-- Password: tia
+1. Email: abuela@void.ugr.es Password: abuela
+2. Email: tia@void.ugr.es Password: tia
 
-#Database Restoration Files
+# Database Restoration Files
 
 The following files are included in the backups/ folder to assist with database setup:
 
-db_prueba.sql: This file contains queries to populate the database with test data based on the project requirements.
-initial_db_setups.sql: This script is used to reset the database, emptying all tables except for the two administrator records in the usuarios table.
-Database Documentation
+- db_prueba.sql: This file contains queries to populate the database with test data based on the project requirements.
+- initial_db_setups.sql: This script is used to reset the database, emptying all tables except for the two administrator records in the usuarios table.
+
+# Database Documentation
 
 Entity-Relationship (ER) Model
 Below is an outline of the ER model:
@@ -44,7 +45,7 @@ Fields: id, fecha, descripcion.
 Key Points: id is the primary key; fecha stores the timestamp, and descripcion logs actions.
 Technical Details
 
-Application Structure
+# Application Structure
 The index.php script is the main entry point of the application, minimizing code duplication. All other pages are included within <main> tags based on the URI.
 Responsive Design: The app is mobile-friendly, with media queries adjusting the layout for smaller screens. For screens with a width of 550px or less, the left-side menu moves to the top, and the right-side menu moves to the bottom.
 Navigation
